@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="main.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="navigation">
+            <img class="logo" src="images/logo.png" alt="logo">
+            <ul>
+                <li class="list">
+                    <a href="index.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list active">
+                    <a href="profile.html">
+                        <span class="icon">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                        </span>
+                        <span class="text">Profile</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="chat.html">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="text">Chat</span>
+                    </a>
+                </li>
+                <li class="list">
+                  <a href="about.html">
+                    <span class="icon">
+                      <ion-icon name="people-circle-outline"></ion-icon>
+                    </span>
+                    <span class="text">About us</span>
+                </a>
+                </li>
+                <li class="list">
+                  <a href="Loging.html">
+                    <span class="icon">
+                      <ion-icon name="log-in-outline"></ion-icon>
+                    </span>
+                    <span class="text">Log-in</span>
+                </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+
+        <div class="registration-form">
+            <div class="register">
+                <h1>User Profile</h1>
+                <div class="profile">
+                    <img id="profile" src="images/user.jpg" alt="profile">
+                </div>
+                <div class="details">
+                    <br><br>
+                    <span class="fas fa-user-alt"></span>
+                    <span class="text"> user</span>
+                    <br><br>
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">Matara, Kamburupitiya</span>
+                    <br><br>
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">+94773365812</span>
+                    <br><br>
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">user123@gmail.com</span>
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+<!-- ==========================footer======================= -->
+
+<footer>
+    <div class="main-content">
+      <div class="left box">
+        <h2>About us</h2>
+        <div class="content">
+          <p>We are 5th Batch Faculty of Technology University of ruhuna. Fundamentals of web technology Semester 1 Web mini project group07.</p>
+          <div class="social">
+            <a href="https://facebook.com/coding.np"><span class="fab fa-facebook-f"></span></a>
+            <a href="#"><span class="fab fa-twitter"></span></a>
+            <a href="https://instagram.com/coding.np"><span class="fab fa-instagram"></span></a>
+            <a href="https://youtube.com/c/codingnepal"><span class="fab fa-youtube"></span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="center box">
+        <h2>Address</h2>
+        <div class="content">
+          <div class="place">
+            <span class="fas fa-map-marker-alt"></span>
+            <span class="text">Matara, Kamburupitiya</span>
+          </div>
+          <div class="phone">
+            <span class="fas fa-phone-alt"></span>
+            <span class="text">+94773365812</span>
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="text">group07@gmail.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="right box">
+        <h2>Contact us</h2>
+        <div class="content">
+          <form action="#">
+            <div class="email">
+              <div class="text">Email *</div>
+              <input type="email" required>
+            </div>
+            <div class="msg">
+              <div class="text">Message *</div>
+              <textarea rows="2" cols="25" required></textarea>
+            </div>
+            <div class="btn">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <center>
+        <span class="far fa-copyright"></span><span> 2022 All rights reserved.</span>
+      </center>
+    </div>
+  </footer>
+
+<!-- ======================================================= -->
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) => item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) => item.addEventListener('click', activeLink));
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="profile.css">
+</head>
+
+<body>
+    <div class="registration-form">
+        <div class="register">
+            <h1>User Profile</h1>
+            <div class="profile">
+                <img id="profile" src="user.jpg" alt="profile">
+            </div>
+            <div class="details">
+                <br><br>
+                <span class="fas fa-user-alt"></span>
+                <span class="text"> user</span>
+                <br><br>
+                <span class="fas fa-map-marker-alt"></span>
+                <span class="text">Matara, Kamburupitiya</span>
+                <br><br>
+                <span class="fas fa-phone-alt"></span>
+                <span class="text">+94773365812</span>
+                <br><br>
+                <span class="fas fa-envelope"></span>
+                <span class="text">user123@gmail.com</span>
+            </div>
+            <br><br>
+        </div>
+    </div>
+</body>
+
+</html> -->

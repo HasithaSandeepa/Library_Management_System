@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Auto Type</title>
+</head>
+<body>
+    <div class="cont">
+        <h1><span class="auto-type"></span></h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    |<script>
+        var typed = new Typed(".auto-type",{
+            strings: ["we can't open this book at this moment.","sorry for the inconvenience"],
+            typeSpeed: 100,
+            backSpeed: 0,
+            loop: true
+        })
+    </script>
+</body>
+</html>
